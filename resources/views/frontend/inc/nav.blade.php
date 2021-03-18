@@ -67,7 +67,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="table_option_dropdown_locale">
-                       
+
 
                             </div>
                         </div>
@@ -267,23 +267,7 @@
                         </ul>
                     </li>
                     @endguest
-                    <li>
-                        @guest
-                        <a href="{{ route('user.items.create') }}" class="cta"><span
-                                class="bg-primary text-white rounded"><i class="fas fa-plus mr-1"></i>
-                                {{ __('frontend.header.list-business') }}</span></a>
-                        @else
-                        @if(Auth::user()->isAdmin())
-                        <a href="{{ route('admin.items.create') }}" class="cta"><span
-                                class="bg-primary text-white rounded"><i class="fas fa-plus mr-1"></i>
-                                {{ __('frontend.header.list-business') }}</span></a>
-                        @else
-                        <a href="{{ route('user.items.create') }}" class="cta"><span
-                                class="bg-primary text-white rounded"><i class="fas fa-plus mr-1"></i>
-                                {{ __('frontend.header.list-business') }}</span></a>
-                        @endif
-                        @endguest
-                    </li>
+               
                 </ul>
             </nav>
         </div>
