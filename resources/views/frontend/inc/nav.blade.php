@@ -67,12 +67,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="table_option_dropdown_locale">
-                                @foreach(\App\Setting::LANGUAGES as $setting_languages_key => $language)
-                                <a class="dropdown-item"
-                                    href="{{ route('page.locale.update', ['user_prefer_language' => $language]) }}">
-                                    {{ __('prefer_languages.' . $language) }}
-                                </a>
-                                @endforeach
+                       
 
                             </div>
                         </div>
